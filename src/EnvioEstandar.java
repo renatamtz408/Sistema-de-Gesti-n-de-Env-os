@@ -1,4 +1,4 @@
-public class EnvioEstandar extends EstrategiaEnvio{
+public class EnvioEstandar implements EstrategiaEnvio{
     @Override
     public double calcularCosto(double pesoKg) {
         return pesoKg*2;

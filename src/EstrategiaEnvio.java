@@ -1,3 +1,3 @@
 public interface EstrategiaEnvio {
-    public double calcularCosto (double pesoKg);
+    double calcularCosto (double pesoKg);
 }
