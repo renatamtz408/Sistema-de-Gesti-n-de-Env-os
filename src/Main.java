@@ -18,10 +18,45 @@ public class Main {
             opcion = teclado.nextInt();
             teclado.nextLine();
 
-            switch(opcion){
+            switch(opcion) {
                 case 1:
+                    System.out.println("Envio estandar");
+                    System.out.println("$2 * kg");
+
+                    System.out.println("Envio express");
+                    System.out.println("$4.5 * kg + $3 recargo fijo");
+
+                    System.out.println("Envio internacional");
+                    System.out.println("$6 * kg + $10 pago unico en la primera factura");
                     break;
                 case 2:
+                    System.out.println("Nombre del destinatario: ");
+                    String nombre = teclado.nextLine();
+
+                    System.out.println("Peso en kg: ");
+                    double peso = teclado.nextDouble();
+
+                    System.out.println("Tipo de envio: ");
+                    System.out.println("Envio estandar");
+                    System.out.println("Envio express");
+                    System.out.println("Envio internacional");
+                    int tipo = teclado.nextInt();
+
+                    EstrategiaEnvio estrategia;
+
+                    switch(tipo) {
+                        case 1:
+                            estrategia = new EnvioEstandar();
+                            break;
+                        case 2:
+                            estrategia = new EnvioExpress();
+                            break;
+                        case 3:
+                            estrategia = new EnvioInternacional();
+                            break;
+                        default:
+                            System.out.println("Opcion invalida.");
+                    }
                     break;
                 case 3:
                     empresa.imprimirReporte();
