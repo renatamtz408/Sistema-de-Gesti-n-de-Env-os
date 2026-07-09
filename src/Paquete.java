@@ -12,4 +12,28 @@ public abstract class Paquete {
     public double obtenerCostoEnvio (){
         return estrategiaenvio.calcularCosto(pesoKg);
     }
+
+    public String getNombreDestinatario() {
+        return nombreDestinatario;
+    }
+
+    public void setNombreDestinatario(String nombreDestinatario) {
+        this.nombreDestinatario = nombreDestinatario;
+    }
+
+    public double getPesoKg() {
+        return pesoKg;
+    }
+
+    public void setPesoKg(double pesoKg) {
+        this.pesoKg = pesoKg;
+    }
+
+    public EstrategiaEnvio getEstrategiaenvio() {
+        return estrategiaenvio;
+    }
+
+    public void setEstrategiaenvio(EstrategiaEnvio estrategiaenvio) {
+        this.estrategiaenvio = estrategiaenvio;
+    }
 }
