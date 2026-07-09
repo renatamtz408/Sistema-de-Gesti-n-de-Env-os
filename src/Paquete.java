@@ -13,20 +13,15 @@ public abstract class Paquete {
         return estrategiaenvio.calcularCosto(pesoKg);
     }
 
-    public void imprimirReporte() {
+    public String getnombreDestinatario() {
+        return nombreDestinatario;
+    }
 
-        double total = 0;
+    public double getpesoKg() {
+        return pesoKg;
+    }
 
-        for (Paquete paquete : paquetes) {
-            System.out.println("Destinatario: " + paquete.nombreDestinatario);
-            System.out.println("Peso: " + paquete.pesoKg);
-
-            double costo = paquete.obtenerCostoEnvio();
-
-            System.out.println("Costo: $" + costo);
-
-            total += costo;
-        }
-        System.out.println("Total recaudado: $" + total);
+    public EstrategiaEnvio getEstrategiaenvio() {
+        return estrategiaenvio;
     }
 }
