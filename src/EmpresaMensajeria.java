@@ -38,5 +38,7 @@ public class EmpresaMensajeria {
             total += costo;
         }
         System.out.println("Total recaudado: $" + total);
+        System.out.println("______________________________");
+
     }
 }
