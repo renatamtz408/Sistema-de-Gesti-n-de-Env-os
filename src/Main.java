@@ -37,9 +37,9 @@ public class Main {
                     double peso = teclado.nextDouble();
 
                     System.out.println("Tipo de envio: ");
-                    System.out.println("Envio estandar");
-                    System.out.println("Envio express");
-                    System.out.println("Envio internacional");
+                    System.out.println("1) Envio estandar");
+                    System.out.println("2) Envio express");
+                    System.out.println("3) Envio internacional");
                     int tipo = teclado.nextInt();
 
                     EstrategiaEnvio estrategia;
@@ -57,6 +57,7 @@ public class Main {
                         default:
                             System.out.println("Opcion invalida.");
                     }
+
                     break;
                 case 3:
                     empresa.imprimirReporte();

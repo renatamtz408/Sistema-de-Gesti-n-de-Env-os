@@ -14,7 +14,7 @@ public class EmpresaMensajeria {
 
     public void imprimirReporte() {
         double total = 0;
-
+        System.out.println("REPORTE");
         for (Paquete paquete : paquetes) {
             System.out.println("Destinatario: " + paquete.getnombreDestinatario());
             System.out.println("Peso: " + paquete.getpesoKg());
