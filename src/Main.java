@@ -6,7 +6,7 @@ public class Main {
         Scanner teclado = new Scanner(System.in);
         EmpresaMensajeria empresa = new EmpresaMensajeria();
 
-        int opcion=0;
+        int opcion = 0;
 
         do {
             try {
@@ -75,7 +75,6 @@ public class Main {
                 teclado.nextLine();
             }
 
-            } while (opcion != 4);
+        } while (opcion != 4);
     }
-
 }
