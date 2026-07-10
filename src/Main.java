@@ -21,16 +21,22 @@ public class Main {
 
                 switch (opcion) {
                     case 1:
+                        System.out.println("TIPOS DE ENVIO");
+                        System.out.println(" ");
+
                         System.out.println("Envio estandar:");
                         System.out.println("$2.00 USD por kg (entrega en 5 a 7 días hábiles).");
+                        System.out.println(" ");
 
                         System.out.println("Envio express");
                         System.out.println("$4.50 USD por kg + un cargo fijo de $3.00 USD por manejo prioritario (entrega\n" +
                                 "en 24 a 48 horas).");
+                        System.out.println(" ");
 
                         System.out.println("Envio internacional");
                         System.out.println("$6.00 USD por kg + un recargo único de $10.00 USD en la primera factura\n" +
                                 "por trámites aduaneros y seguro obligatorio.");
+                        System.out.println(" ");
                         break;
                     case 2:
                         System.out.println("Nombre del destinatario: ");
