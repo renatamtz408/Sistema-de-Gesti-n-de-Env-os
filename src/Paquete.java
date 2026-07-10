@@ -9,7 +9,19 @@ public abstract class Paquete {
         this.estrategiaenvio = estrategiaenvio;
     }
 
-    public double obtenerCostoEnvio (){
+    public double obtenerCostoEnvio() {
         return estrategiaenvio.calcularCosto(pesoKg);
+    }
+
+    public String getnombreDestinatario() {
+        return nombreDestinatario;
+    }
+
+    public double getpesoKg() {
+        return pesoKg;
+    }
+
+    public EstrategiaEnvio getEstrategiaenvio() {
+        return estrategiaenvio;
     }
 }

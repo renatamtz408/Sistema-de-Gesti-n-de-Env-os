@@ -59,7 +59,7 @@ public class Main {
                     }
                     break;
                 case 3:
-                    EmpresaMensajeria.imprimirReporte();
+                    empresa.imprimirReporte();
                     break;
                 case 4:
                     System.out.println("Hasta luego...");
@@ -69,7 +69,7 @@ public class Main {
 
             }
 
-        } while (opcion != 4);
+            } while (opcion != 4);
     }
 
 }
